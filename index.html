@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resoluciones</title>
+    <style>
+
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    body{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
+
+    h1{
+        height: 10%;
+        background-color: blue;
+        color: white;
+    }
+
+    .Pantalla_completa{
+        height: 10%;
+        width: 100%;
+        background-color: darkcyan;
+        color: white;
+    }
+
+    .Ajustador_de_resolucion{
+        height: 10%;
+        background-color: red;
+        color: white;
+        width: 100px;
+    }
+
+    @media all and (min-width: 576px) {
+        .Ajustador_de_resolucion{
+        background-color: rgb(21, 255, 0);
+        color: white;
+        width: 576px;
+    }
+    }
+
+    @media all and (min-width: 992px) {
+        .Ajustador_de_resolucion{
+        background-color: rgb(17, 16, 16);
+        color: white;
+        width: 992px;
+    }
+    }
+
+    </style>
+</head>
+<body>
+    <h1>Algoritmo para ver las resoluciones de la pantalla</h1>
+    <div class="Pantalla_completa">Pantalla completa</div>
+    <div class="Ajustador_de_resolucion">Ajustador_de_resolucion</div>
+    <br>
+    <div class="Ajustador_de_resolucion">Ancho del monitor de mi trabajo: 1366px</div>
+</body>
+</html>
